@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdth=device-width, inital-scale=1">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 1025px)">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Me</a></li>
+                <li><a href="projects.html"> Projects</a></li>
+                <li><a href="contact.html"> Contact Me</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+        <!--Createing the form below-->
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Num:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>    
+    </main>
+    <!--Footer section below-->
+    <p>Contact: <a href="mailto:syed.akbarzada1@ontariotechu.net">syed.akbarzada1@ontariotechu.net</a></p>
+        <p>&copy; 2024 Syed Akbarzada</p>
+</body>
+</html>
